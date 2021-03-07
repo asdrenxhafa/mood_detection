@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . '/vendor/autoload.php';
+include __DIR__ . '../vendor/autoload.php';
 
 use Rubix\ML\Other\Loggers\Screen;
 use Rubix\ML\Datasets\Labeled;
