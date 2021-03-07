@@ -1,0 +1,14 @@
+{
+    "name": "asdrenxhafa/mooddetection",
+    "description": "Laravel package that uses machine learning to take a text input and predict the pretext or the mood of the author of that text",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Asdren Xhafa",
+            "email": "asdrenxhafa@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
