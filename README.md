@@ -5,7 +5,7 @@ Add the provider in ```app/Providers/AppServiceProvider.php```
 public function register()
 {
     if ($this->app->environment() == 'local') {
-        $this->app->register('Mckenziearts\LaravelCommand\LaravelCommandServiceProvider');
+        $this->app->register('asdrenxhafa\mooddetection\LaravelCommandServiceProvider');
     }
 }
 ```
