@@ -14,6 +14,6 @@ class MoodDetection
 
         $prediction = $estimator->predictSample([$message]);
 
-        echo "The sentiment is: $prediction" . PHP_EOL;
+        return "The sentiment is: $prediction" . PHP_EOL;
     }
 }
