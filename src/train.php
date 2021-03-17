@@ -75,6 +75,5 @@ Unlabeled::build(array_transpose([$scores, $losses]))
 
 $logger->info('Progress saved to progress.csv');
 
-if (strtolower(trim(readline('Save this model? (y|[n]): '))) === 'y') {
-    $estimator->save();
-}
+$estimator->save();
+
