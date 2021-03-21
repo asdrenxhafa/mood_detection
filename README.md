@@ -4,7 +4,7 @@ Add the provider in ```app/Providers/AppServiceProvider.php```
 ```php
 public function register()
 {
-    $this->app->register('asdrenxhafa\mooddetection\MoodDetectionCommandServiceProvider');
+    $this->app->register('asdrenxhafa\mooddetection\Providers\MoodDetectionCommandServiceProvider');
 }
 ```
 #
