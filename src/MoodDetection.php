@@ -1,4 +1,5 @@
 <?php
+namespace asdrenxhafa\mooddetection;
 
 include __DIR__ . '/vendor/autoload.php';
 
@@ -15,5 +16,9 @@ class MoodDetection
         $prediction = $estimator->predictSample([$message]);
 
         return "The sentiment is: $prediction" . PHP_EOL;
+    }
+
+    public function test(){
+        return 'asd';
     }
 }

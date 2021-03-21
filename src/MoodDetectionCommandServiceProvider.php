@@ -5,7 +5,7 @@ namespace asdrenxhafa\mooddetection;
 use Illuminate\Support\ServiceProvider;
 use asdrenxhafa\mooddetection\Console\Commands\TrainCommand;
 
-class LaravelCommandServiceProvider extends ServiceProvider
+class MoodDetectionCommandServiceProvider extends ServiceProvider
 {
 
     protected $commands = [
