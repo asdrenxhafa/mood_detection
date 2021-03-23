@@ -1,5 +1,5 @@
 {
-    "name": "asdren/src",
+    "name": "asdrenhafa/mooddetection",
     "require": {
         "rubix/ml": "^0.4.0"
     },
@@ -8,5 +8,6 @@
             "name": "Asdren Xhafa",
             "email": "asdrenxhafa@gmail.com"
         }
-    ]
+    ],
+    "description": ""
 }

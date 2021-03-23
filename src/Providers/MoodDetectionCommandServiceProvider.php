@@ -1,6 +1,6 @@
 <?php
 
-namespace asdrenxhafa\mooddetection;
+namespace asdrenxhafa\mooddetection\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use asdrenxhafa\mooddetection\Console\Commands\TrainCommand;

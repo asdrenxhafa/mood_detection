@@ -2,6 +2,8 @@
 
 namespace asdrenxhafa\mooddetection\Console\Commands;
 
+use asdrenxhafa\mooddetection\MoodDetection;
+use asdrenxhafa\mooddetection\train\Train;
 use Illuminate\Console\Command;
 
 class TrainCommand extends Command
@@ -36,6 +38,8 @@ class TrainCommand extends Command
      */
     public function handle()
     {
-       shell_exec('php train.php');
+       $trainer = new MoodDetection();
+
+       $trainer->train();
     }
 }
