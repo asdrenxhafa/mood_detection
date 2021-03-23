@@ -4,9 +4,7 @@ Add the provider in ```app/Providers/AppServiceProvider.php```
 ```php
 public function register()
 {
-    if ($this->app->environment() == 'local') {
-        $this->app->register('asdrenxhafa\mooddetection\LaravelCommandServiceProvider');
-    }
+    $this->app->register('asdrenxhafa\mooddetection\Providers\MoodDetectionCommandServiceProvider');
 }
 ```
 #
