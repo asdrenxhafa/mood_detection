@@ -5,21 +5,21 @@ namespace asdrenxhafa\mooddetection\Console\Commands;
 use asdrenxhafa\mooddetection\MoodDetection;
 use Illuminate\Console\Command;
 
-class TrainCommand extends Command
+class ValidateCommand extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'train:model';
+    protected $signature = 'validate:model';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Trains the ML model';
+    protected $description = 'Validates the ML model';
 
     /**
      * Create a new command instance.
@@ -39,6 +39,6 @@ class TrainCommand extends Command
     {
        $trainer = new MoodDetection();
 
-       $trainer->train();
+       $trainer->validate();
     }
 }
