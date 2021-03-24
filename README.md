@@ -8,8 +8,33 @@ public function register()
 }
 ```
 #
-php train.php
+Training the Model
+```bash 
+$ php artisan train:model
+```
+
+or run programmaticly
+```php
+    $moodDetection = new MoodDetection();
+    $moodDetection->train();
+```
 #
-php validate.php
+Validating the Model
+```bash 
+$ php artisan validate:model
+```
+
+or run programmaticly
+```php
+    $moodDetection = new MoodDetection();
+    $moodDetection->validate();
+```
 # 
-php predict.php
+To run a prediction
+```php
+    $moodDetection = new MoodDetection();
+
+    $message = 'I am very happy today';
+    
+    $prediction = $moodDetection->predict($message);
+```
