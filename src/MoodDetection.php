@@ -75,13 +75,6 @@ class MoodDetection
             }
         }
 
-//        foreach (['positive', 'negative'] as $label) {
-//            foreach (glob("train/$label/*.txt") as $file) {
-//                $samples[] = [file_get_contents($file)];
-//                $labels[] = $label;
-//            }
-//        }
-
         $dataset = new Labeled($samples, $labels);
 
         $estimator = new PersistentModel(
@@ -133,10 +126,23 @@ class MoodDetection
 
         $samples = $labels = [];
 
-        foreach (['positive', 'negative'] as $label) {
-            foreach (glob("test/$label/*.txt") as $file) {
-                $samples[] = [file_get_contents($file)];
-                $labels[] = $label;
+        $dir = __DIR__ . '\test\positive';
+        if (is_dir($dir)) {
+            foreach (scandir($dir) as $file) {
+                if ($file !== '.' && $file !== '..') {
+                    $samples[] = [file_get_contents($dir . "\\" . $file)];
+                    $labels[] = 'positive';
+                }
+            }
+        }
+
+        $dir = __DIR__ . '\test\negative';
+        if (is_dir($dir)) {
+            foreach (scandir($dir) as $file) {
+                if ($file !== '.' && $file !== '..') {
+                    $samples[] = [file_get_contents($file)];
+                    $labels[] = 'negative';
+                }
             }
         }
 
