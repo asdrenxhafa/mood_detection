@@ -15,8 +15,8 @@ $ php artisan train:model
 
 or run programmaticly
 ```php
-    $moodDetection = new MoodDetection();
-    $moodDetection->train();
+$moodDetection = new MoodDetection();
+$moodDetection->train();
 ```
 #
 Validating the Model
@@ -26,15 +26,15 @@ $ php artisan validate:model
 
 or run programmaticly
 ```php
-    $moodDetection = new MoodDetection();
-    $moodDetection->validate();
+$moodDetection = new MoodDetection();
+$moodDetection->validate();
 ```
 # 
 To run a prediction
 ```php
-    $moodDetection = new MoodDetection();
+$moodDetection = new MoodDetection();
 
-    $message = 'I am very happy today';
+$message = 'I am very happy today';
     
-    $prediction = $moodDetection->predict($message);
+$prediction = $moodDetection->predict($message);
 ```
